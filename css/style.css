@@ -1519,3 +1519,183 @@ ul {
         transition: none;
     }
 }
+
+/* ========================================
+   CAMPUSFLOW FEATURED PROJECT CARD
+   ======================================== */
+
+.projects-section {
+    padding: 50px 0 80px;
+}
+
+.projects-section > h2 {
+    font-size: 30px;
+    margin-bottom: 28px;
+    color: #f8fafc;
+}
+
+.portfolio-project-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 850px);
+    gap: 24px;
+    width: 100%;
+}
+
+.portfolio-project-card {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 34px;
+    background: linear-gradient(145deg, #111f36, #0c1729);
+    border: 1px solid #293b56;
+    border-radius: 18px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
+    color: #e2e8f0;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.portfolio-project-card:hover {
+    transform: translateY(-3px);
+    border-color: #3b82f6;
+}
+
+.portfolio-project-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.portfolio-project-category {
+    color: #93c5fd;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+.portfolio-project-version {
+    background: #1e3a5f;
+    color: #bfdbfe;
+    border: 1px solid #315680;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.portfolio-project-card h3 {
+    font-size: 32px;
+    line-height: 1.2;
+    color: #ffffff;
+    margin: 0 0 8px;
+}
+
+.portfolio-project-subtitle {
+    font-size: 15px;
+    color: #60a5fa;
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+
+.portfolio-project-description {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #cbd5e1;
+    margin: 0 0 26px;
+}
+
+.portfolio-project-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 26px;
+}
+
+.portfolio-project-highlights span {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    padding: 12px 14px;
+    background: #182a43;
+    border: 1px solid #2b4160;
+    border-radius: 10px;
+    color: #f1f5f9;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.portfolio-project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-bottom: 28px;
+}
+
+.portfolio-project-tech span {
+    display: inline-flex;
+    padding: 7px 12px;
+    border-radius: 7px;
+    background: #18345b;
+    color: #bfdbfe;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.portfolio-project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+}
+
+.portfolio-project-actions .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 9px;
+    font-weight: 600;
+}
+
+.portfolio-project-secondary {
+    background: transparent;
+    border: 1px solid #64748b;
+    color: #e2e8f0;
+}
+
+.portfolio-project-secondary:hover {
+    background: #1e293b;
+    border-color: #93c5fd;
+}
+
+@media (max-width: 600px) {
+    .projects-section {
+        padding: 35px 0 60px;
+    }
+
+    .portfolio-project-card {
+        padding: 22px;
+    }
+
+    .portfolio-project-card h3 {
+        font-size: 27px;
+    }
+
+    .portfolio-project-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-project-actions .btn {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .portfolio-project-card {
+        transition: none;
+    }
+}
