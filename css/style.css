@@ -1412,3 +1412,110 @@ ul {
         background: var(--surface);
     }
 }
+
+/* Featured project showcase */
+
+.portfolio-project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.portfolio-project-card {
+    padding: 30px;
+    border: 1px solid rgba(130, 150, 180, 0.25);
+    border-radius: 18px;
+    background: rgba(130, 150, 180, 0.06);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.portfolio-project-card:hover {
+    transform: translateY(-4px);
+    border-color: #3b82f6;
+}
+
+.portfolio-project-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.portfolio-project-category,
+.portfolio-project-version {
+    font-size: 12px;
+    font-weight: 600;
+    color: #60a5fa;
+}
+
+.portfolio-project-card h3 {
+    font-size: clamp(26px, 4vw, 34px);
+    margin-bottom: 6px;
+}
+
+.portfolio-project-subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: #60a5fa;
+    margin-bottom: 18px;
+}
+
+.portfolio-project-description {
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.portfolio-project-highlights,
+.portfolio-project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-bottom: 22px;
+}
+
+.portfolio-project-highlights span {
+    padding: 8px 11px;
+    border: 1px solid rgba(130, 150, 180, 0.2);
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.portfolio-project-tech span {
+    padding: 6px 11px;
+    background: rgba(59, 130, 246, 0.12);
+    color: #60a5fa;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.portfolio-project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.portfolio-project-secondary {
+    border: 1px solid #64748b;
+    background: transparent;
+    color: inherit;
+}
+
+@media (max-width: 480px) {
+    .portfolio-project-card {
+        padding: 20px;
+    }
+
+    .portfolio-project-actions a {
+        flex: 1;
+        text-align: center;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .portfolio-project-card {
+        transition: none;
+    }
+}
