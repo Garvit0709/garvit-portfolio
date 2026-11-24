@@ -6,13 +6,14 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <meta name="description"
-          content="Software development projects by Garvit Maheshwari.">
+          content="Explore software development and research projects by Garvit Maheshwari, including CampusFlow and MachineDoctor.">
 
     <title>Projects | Garvit Maheshwari</title>
 
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js" defer></script>
 </head>
+
 <body>
 
     <!-- NAVIGATION -->
@@ -65,81 +66,160 @@
 
         </section>
 
-        <!-- PROJECTS SHOWCASE -->
-        
-<!-- PROJECTS SHOWCASE -->
-<section class="projects-section"
-         aria-labelledby="projects-heading">
+        <!-- FEATURED PROJECTS -->
+        <section class="projects-section"
+                 aria-labelledby="projects-heading">
 
-    <h2 id="projects-heading">Featured Projects</h2>
+            <h2 id="projects-heading">
+                Featured Projects
+            </h2>
 
-    <div class="portfolio-project-grid">
+            <div class="portfolio-project-grid">
 
-        <article class="portfolio-project-card">
+                <!-- PROJECT 1: CAMPUSFLOW -->
+                <article class="portfolio-project-card">
 
-            <div class="portfolio-project-top">
-                <span class="portfolio-project-category">
-                    Full-Stack Development
-                </span>
-                <span class="portfolio-project-version">
-                    v1.0
-                </span>
+                    <div class="portfolio-project-top">
+                        <span class="portfolio-project-category">
+                            Full-Stack Development
+                        </span>
+
+                        <span class="portfolio-project-version">
+                            v1.0
+                        </span>
+                    </div>
+
+                    <h3>CampusFlow</h3>
+
+                    <p class="portfolio-project-subtitle">
+                        UPES Bidholi Smart Campus Navigation
+                    </p>
+
+                    <p class="portfolio-project-description">
+                        A full-stack campus navigation platform
+                        featuring an interactive map, building
+                        search, and Dijkstra-based pedestrian
+                        routing. Supports shortest-distance and
+                        stair-free route comparisons, with
+                        PostgreSQL-backed campus data and
+                        protected administrative features.
+                    </p>
+
+                    <div class="portfolio-project-highlights">
+                        <span>30 Campus Locations</span>
+                        <span>40 Graph Nodes</span>
+                        <span>59 Pedestrian Edges</span>
+                        <span>1,740 Routing Tests Passed</span>
+                    </div>
+
+                    <div class="portfolio-project-tech">
+                        <span>React</span>
+                        <span>FastAPI</span>
+                        <span>Python</span>
+                        <span>PostgreSQL</span>
+                        <span>Dijkstra</span>
+                        <span>Leaflet</span>
+                    </div>
+
+                    <div class="portfolio-project-actions">
+
+                        <a href="https://garvit0709.github.io/CampusFlow/"
+                           class="btn btn-primary"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Live Demo ↗
+                        </a>
+
+                        <a href="https://github.com/Garvit0709/CampusFlow"
+                           class="btn portfolio-project-secondary"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            View Source ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- PROJECT 2: MACHINEDOCTOR -->
+                <article class="portfolio-project-card">
+
+                    <div class="portfolio-project-top">
+
+                        <span class="portfolio-project-category">
+                            Full-Stack Development &amp; AI Research
+                        </span>
+
+                        <span class="portfolio-project-version">
+                            v1.0.0
+                        </span>
+
+                    </div>
+
+                    <h3>MachineDoctor</h3>
+
+                    <p class="portfolio-project-subtitle">
+                        Powered by AURA — Motor-Bearing Diagnostics
+                    </p>
+
+                    <p class="portfolio-project-description">
+                        A cloud-deployed motor-bearing diagnostic
+                        research platform powered by the experimental
+                        AURA algorithm. Combines vibration-based
+                        condition analysis, secure administrator
+                        authentication, equipment management, and
+                        PostgreSQL-backed diagnostic history with
+                        a responsive full-stack dashboard.
+                    </p>
+
+                    <div class="portfolio-project-highlights">
+                        <span>7 Vibration Features</span>
+                        <span>3 Diagnostic States</span>
+                        <span>91 Automated Tests Passed</span>
+                        <span>Cloud Deployed</span>
+                    </div>
+
+                    <div class="portfolio-project-tech">
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>PostgreSQL</span>
+                        <span>scikit-learn</span>
+                        <span>Render</span>
+                    </div>
+
+                    <div class="portfolio-project-actions">
+
+                        <a href="https://machinedoctor-zm4t.onrender.com/"
+                           class="btn btn-primary"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Live Demo ↗
+                        </a>
+
+                        <a href="https://github.com/Garvit0709/MachineDoctor"
+                           class="btn portfolio-project-secondary"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            View Source ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
             </div>
 
-            <h3>CampusFlow</h3>
-
-            <p class="portfolio-project-subtitle">
-                UPES Bidholi Smart Campus Navigation
+            <!-- RESEARCH DISCLAIMER -->
+            <p class="projects-description">
+                MachineDoctor's AURA v0.1 algorithm is an
+                experimental research prototype. Its diagnostic
+                predictions are not certified for industrial
+                safety-critical applications.
             </p>
 
-            <p class="portfolio-project-description">
-                A full-stack campus navigation platform
-                featuring an interactive map, building
-                search, and Dijkstra-based pedestrian
-                routing. Supports shortest-distance and
-                stair-free route comparisons, with
-                PostgreSQL-backed campus data and
-                protected administrative features.
-            </p>
-
-            <div class="portfolio-project-highlights">
-                <span>30 Campus Locations</span>
-                <span>40 Graph Nodes</span>
-                <span>59 Pedestrian Edges</span>
-                <span>1,740 Routing Tests Passed</span>
-            </div>
-
-            <div class="portfolio-project-tech">
-                <span>React</span>
-                <span>FastAPI</span>
-                <span>Python</span>
-                <span>PostgreSQL</span>
-                <span>Dijkstra</span>
-                <span>Leaflet</span>
-            </div>
-
-            <div class="portfolio-project-actions">
-                <a href="https://garvit0709.github.io/CampusFlow/"
-                   class="btn btn-primary"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Live Demo ↗
-                </a>
-
-                <a href="https://github.com/Garvit0709/CampusFlow"
-                   class="btn portfolio-project-secondary"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    View Source ↗
-                </a>
-            </div>
-
-        </article>
-
-    </div>
-
-</section>
-
+        </section>
 
         <!-- GITHUB -->
         <section class="projects-github">
@@ -164,6 +244,7 @@
 
     <!-- FOOTER -->
     <footer class="site-footer">
+
         <p>
             &copy; 2026 Garvit Maheshwari.
             All rights reserved.
@@ -171,11 +252,16 @@
 
         <a href="https://github.com/Garvit0709"
            target="_blank"
-           rel="noopener noreferrer">GitHub</a>
+           rel="noopener noreferrer">
+            GitHub
+        </a>
 
         <a href="https://www.linkedin.com/in/garvit-maheshwari-7059ba31b"
            target="_blank"
-           rel="noopener noreferrer">LinkedIn</a>
+           rel="noopener noreferrer">
+            LinkedIn
+        </a>
+
     </footer>
 
 </body>
